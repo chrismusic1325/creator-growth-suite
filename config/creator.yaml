@@ -1,0 +1,49 @@
+project:
+  name: Creator Growth Suite
+  independent_workflows: true
+
+platforms:
+  rumble:
+    enabled: true
+    pipeline_order: 1
+  youtube:
+    enabled: true
+    pipeline_order: 2
+  bandcamp:
+    enabled: true
+  teespring:
+    enabled: true
+    replacement: amaze
+  amaze:
+    enabled: true
+
+targets:
+  daily_unique_subscribers: 1000
+  daily_long_form_views: 35000
+  daily_qualified_shorts_views: 1500000
+  daily_sales_conversions: 200
+  daily_unique_visitors: 1000
+
+references:
+  topic_inspiration:
+    - The Band McMillan
+    - Chase Matthew
+  filming_reference:
+    - Tyler Regan
+    - Sara Finance
+    - Scooter Magruder
+
+avatar:
+  enabled: true
+  file: media/avatar.jpg
+
+engines:
+  agenttube:
+    enabled: true
+  miloagent:
+    enabled: true
+  video_use:
+    enabled: true
+  trend_script:
+    enabled: true
+    implementation: "TrendingContent Agent"
