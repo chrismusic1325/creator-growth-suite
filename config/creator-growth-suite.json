@@ -1,50 +1,49 @@
 {
   "project": "The Traveling Vagabond 7",
-  "source_of_truth": "repository",
   "priority": "existing_content_optimization",
-  "free_only": true,
+
   "agenttube": {
-    "automatic": true,
-    "platforms": [
-      "youtube",
-      "rumble"
-    ],
-    "optimize_existing": true,
-    "new_video_generation_priority": false
+    "platforms": ["youtube", "rumble"],
+    "responsibilities": [
+      "optimize_existing_content",
+      "analytics",
+      "seo",
+      "content_creation",
+      "publishing"
+    ]
   },
+
   "miloagent": {
-    "automatic": true,
+    "engine": "native_milo_scheduler",
+    "cycle_minutes": 3,
+
     "destinations": [
       "youtube",
       "rumble",
       "bandcamp",
-      "amaze"
+      "amaze_teespring"
     ],
-    "purposes": [
-      "organic_traffic",
+
+    "goals": [
+      "traffic",
+      "views",
       "audience_growth",
-      "view_growth",
-      "conversion_optimization"
+      "sales_conversions"
     ]
   },
-  "manual_tools": {
-    "trend_script": true,
-    "video_use": true
+
+  "daily_targets": {
+    "unique_subscribers": 1000,
+    "long_form_views": 35000,
+    "qualified_shorts_views": 1500000,
+    "sales_conversions": 200,
+    "unique_visitors": 1000
   },
-  "excluded_milo_destinations": [
-    "reddit",
-    "twitter",
-    "telegram"
+
+  "manual_only": [
+    "trend_script",
+    "video_use"
   ],
-  "content_priority": [
-    "music",
-    "entertaining challenges and pranks",
-    "storytelling",
-    "travel",
-    "road trips",
-    "destinations",
-    "cruises",
-    "Disney",
-    "real-world experiences"
-  ]
+
+  "free_only": true
 }

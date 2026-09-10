@@ -5,26 +5,26 @@ bot:
                                # auto = macOS→full, Linux server/Docker→server
   cost_mode: "zero"            # zero | standard
   active_hours: [8, 23]        # Bot active window (24h format)
-  scan_interval_minutes: 12    # Scan frequency
-  action_interval_minutes: 8   # Min 8min between actions (accounts rotate)
+  scan_interval_minutes: 2    # Scan frequency
+  action_interval_minutes: 3   # Min 8min between actions (accounts rotate)
   max_actions_per_hour: 6      # Total across all accounts (was 12)
   organic_promo_ratio: 0.95    # 95% organic, 5% promotional max
   log_level: "INFO"
 
 scheduling:
   background:
-    scan_interval_minutes: 25
-    action_interval_minutes: 12
+    scan_interval_minutes: 2
+    action_interval_minutes: 3
     max_actions_per_hour: 4
     active_hours: [9, 22]
   full:
-    scan_interval_minutes: 15
-    action_interval_minutes: 8
+    scan_interval_minutes: 2
+    action_interval_minutes: 3
     max_actions_per_hour: 5
     active_hours: [8, 22]
   server:
-    scan_interval_minutes: 12
-    action_interval_minutes: 8
+    scan_interval_minutes: 2
+    action_interval_minutes: 3
     max_actions_per_hour: 6
     active_hours: [8, 23]
 
