@@ -1,0 +1,44 @@
+{
+  "project": "The Traveling Vagabond 7",
+
+  "automated_systems": {
+    "AgentTube": {
+      "role": "video creation and existing-content optimization",
+      "platforms": [
+        "youtube",
+        "rumble"
+      ]
+    },
+
+    "MiloAgent": {
+      "role": "organic traffic, audience and conversion orchestration",
+      "destinations": [
+        "youtube",
+        "rumble",
+        "bandcamp",
+        "amaze"
+      ]
+    }
+  },
+
+  "manual_tools": [
+    "Trend + Script",
+    "Video Use"
+  ],
+
+  "content_priority": [
+    "music",
+    "entertaining challenges and pranks",
+    "storytelling",
+    "travel",
+    "road trips",
+    "destinations",
+    "cruises",
+    "Disney",
+    "entertaining real-world experiences"
+  ],
+
+  "new_video_priority": false,
+  "existing_content_optimization_priority": true,
+  "free_only": true
+}
