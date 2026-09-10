@@ -15,7 +15,7 @@ accounts:
     client_secret: ""
     user_agent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
     cookies_file: "data/cookies/reddit_account1.json"
-    enabled: true
+    enabled: false
     persona: "content_creator"
     assigned_projects: ["my_project"]
     cooldown_minutes: 10

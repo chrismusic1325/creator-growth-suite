@@ -1,44 +1,50 @@
-# Creator Growth Suite - Repository Source of Truth
+# Creator Growth Suite - Authoritative Operating Standard
 
-## Current Priority
-Optimize existing YouTube and Rumble content first.
-New-video generation is secondary until explicitly reprioritized.
+This repository is the single source of truth.
 
 ## AgentTube - AUTOMATED
 - YouTube
 - Rumble
-- Existing-content optimization
-- Analytics / SEO / thumbnails / publishing where implemented
+- Optimize existing content
+- Analytics / SEO / metadata optimization
+- Create/publish new content when enabled
+- CURRENT PRIORITY: existing-content optimization first
 
 ## MiloAgent - AUTOMATED
-- Growth, traffic, audience and conversion orchestration
-- YouTube
-- Rumble
-- Bandcamp
-- Amaze / Teespring
+- Legitimate traffic growth
+- Audience growth
+- View growth workflows
+- Sales/conversion workflows
+- Destinations: YouTube, Rumble, Bandcamp, Amaze/Teespring
 
-## Manual Tools
-- Trend + Script
-- Video Use
-
-## Excluded Milo Destinations
+## MiloAgent must NOT use as active destinations
 - Reddit
 - Twitter / X
 - Telegram
+
+## Trend + Script
+- MANUAL ONLY
+
+## Video Use
+- MANUAL ONLY
 
 ## Cost Policy
 - Free only
 - No paid AI fallback
 
-## Capability Truth
-CONFIGURED != CONNECTED != ACTION PERFORMED != RESULT OBSERVED
-Never report a login/session as an optimization.
-Never report a running process as traffic.
-Never report a target as an observed result.
-Never report views, subscribers, traffic or sales without platform evidence.
+## Content Priority
+1. Music
+2. Entertaining challenges and pranks
+3. Storytelling
+4. Travel / road trips / destinations / cruises / Disney / real-world experiences
 
-## Everyday Start
-cd ~/creator-growth-suite && ./GO.sh
+## Startup Standard
+The only normal startup command is:
 
-## Capability Status
-cd ~/creator-growth-suite && python platform-status.py
+    cd ~/creator-growth-suite && ./GO.sh
+
+## Required Platforms
+- YouTube
+- Rumble
+- Bandcamp
+- Amaze / Teespring

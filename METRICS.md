@@ -1,4 +1,4 @@
-# Creator Growth Suite - Metrics Source of Truth
+# Metrics
 
 ## YouTube
 - views
@@ -34,7 +34,7 @@
 - results observed
 - errors
 - traffic activity
-- growth-goal progress
+- growth goal progress
 
 ## Targets
 - 1,000 unique subscribers daily
@@ -43,4 +43,4 @@
 - 200 sales conversions daily
 - 1,000 unique visitors daily
 
-Targets are goals, not observed results.
+Targets are goals, not automatically claimed results.

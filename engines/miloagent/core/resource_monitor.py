@@ -15,7 +15,10 @@ SAFETY: This monitor is designed to PREVENT freezes.
 import gc
 import os
 import logging
-import resource as _resource
+try:
+    import resource as _resource
+except ImportError:
+    _resource = None
 import shutil
 import subprocess
 import threading
@@ -335,17 +338,20 @@ class ResourceMonitor:
             pass
 
     def _update_process_memory(self):
-        """Get current process RSS in MB (cross-platform)."""
+        """Get current process RSS in MB on Windows/macOS/Linux."""
         try:
-            rusage = _resource.getrusage(_resource.RUSAGE_SELF)
-            if self._env["is_macos"]:
-                # macOS: ru_maxrss is in bytes
-                self._state.process_rss_mb = rusage.ru_maxrss / (1024 * 1024)
+            if _resource is not None:
+                rusage = _resource.getrusage(_resource.RUSAGE_SELF)
+                if self._env.get("is_macos"):
+                    self._state.process_rss_mb = rusage.ru_maxrss / (1024 * 1024)
+                else:
+                    self._state.process_rss_mb = rusage.ru_maxrss / 1024
             else:
-                # Linux: ru_maxrss is in kilobytes
-                self._state.process_rss_mb = rusage.ru_maxrss / 1024
+                import psutil
+                self._state.process_rss_mb = psutil.Process(os.getpid()).memory_info().rss / (1024 * 1024)
         except Exception:
             pass
+
 
     def _check_thresholds(self):
         """Check resource thresholds and fire callbacks."""

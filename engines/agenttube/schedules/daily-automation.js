@@ -31,6 +31,11 @@ class DailyAutomation {
     // Daily content generation at 6:00 AM
     this.scheduledTasks.set('daily-content-generation', 
       cron.schedule('0 6 * * *', async () => {
+        // OPTIMIZE_EXISTING_ONLY_GUARD
+        if (process.env.OPTIMIZE_EXISTING_ONLY === '1') {
+            return;
+        }
+
         if (this.isEnabled) {
           await this.runDailyContentGeneration();
         }

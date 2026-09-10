@@ -33,3 +33,6 @@ runtime/*
 Thumbs.db
 
 !media/avatar.jpg
+account-profiles/
+runtime/
+.creator-local.env

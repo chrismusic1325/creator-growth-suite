@@ -1,0 +1,31 @@
+{
+  "mode": "optimize_existing_first",
+
+  "agenttube": {
+    "platforms": ["youtube", "rumble"],
+    "optimize_existing": true,
+    "generate_new_video": false
+  },
+
+  "miloagent": {
+    "destinations": [
+      "youtube",
+      "rumble",
+      "bandcamp",
+      "amaze"
+    ],
+    "traffic": true,
+    "audience_growth": true,
+    "conversion_optimization": true
+  },
+
+  "trend_script": {
+    "automatic": false
+  },
+
+  "video_use": {
+    "automatic": false
+  },
+
+  "free_only": true
+}

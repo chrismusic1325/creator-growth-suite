@@ -11,7 +11,7 @@ accounts:
     password: "your_twitter_password"
     totp_secret: ""
     cookies_file: "data/cookies/twitter_account1.json"
-    enabled: true
+    enabled: false
     persona: "tech_enthusiast"
     assigned_projects: ["my_project"]
     cooldown_minutes: 20
