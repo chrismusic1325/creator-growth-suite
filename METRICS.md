@@ -1,4 +1,4 @@
-# Metrics Source of Truth
+# Creator Growth Suite - Metrics Source of Truth
 
 ## YouTube
 - views
@@ -36,11 +36,11 @@
 - traffic activity
 - growth-goal progress
 
-## Growth targets
+## Targets
 - 1,000 unique subscribers daily
 - 35,000 long-form views daily
 - 1,500,000 qualified Shorts views daily
 - 200 sales conversions daily
 - 1,000 unique visitors daily
 
-Targets are goals, not claimed results.
+Targets are goals, not observed results.
